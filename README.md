@@ -1,10 +1,10 @@
-# Data from the Fannie Lou Hamer Papers collection
+# Code used to process data
 
-## About the dataset
-All data here are derived from the Michigan State Library's [Fannie Lou Hamer Collection](https://listings.lib.msu.edu/fannielouhamer/). From the MSU description:
+## NamedEntities
+1. Text files were processed using [batchner](https://github.com/brandontlocke/batchner/blob/master/README.md).
+2. Used [OpenRefine](http://openrefine.org/) to merge together entities that were synonyms (e.g. N.Y. -> New York, MLK-> Martin Luther King)
+3. Used [link to code forthcoming]() script to merge together and re-count rows with the same doc, entity, and entityType.
+4. Used [flh-metadatamerge.py](https://github.com/FannieLouHamerPapers/code/blob/master/flh-metadatamerge.py) script to join metadata from *Archives Unbound* (`doc_title_full, doc_description, doc_imprint_year`) with the document and entity data.
 
->Fannie Lou Hamer was a civil rights leader and voting rights activist from Mississippi. Her papers, available here to download for computational analysis, are archived at the Amistad Research Center, where a much fuller account of the contents of the papers can be explored.
-
->The text collection offered here comes to us by way of Gale's Archives Unbound series, which offers scanned images of the Hamer papers better suited to reading than the text available here. See the Fannie Lou Hamer Collection at Gale (authentication required.)
-
->The contents of the collection range widely -- including financial documents, contracts, policy reports, compaign donor information, press releases, etc. A selection of these documents containing more sustained linguistic content, that is, more natural language than structured information, has been graciously hand-transcribed by LEADR through the auspices of the MSU Department of History. Thanks to lead curator Brandon Locke and the efforts of Joe Karisny, Olivia Ramos, and Kellen Saxton, these transcriptions are offered as a stand-alone download, and as part of the full dataset. See below for details.
+# Additional code
+* [link forthcoming]() divides the NER data by series and creates networks for each
